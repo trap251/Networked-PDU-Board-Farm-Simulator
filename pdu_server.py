@@ -13,8 +13,8 @@ def run_server():
     outlet_data = config["outlets"]
     print(f"Booting up PDU server for {len(outlet_data)} boards.")
 
-    server_port = config["pdu_settigs"]["port"]
-    server_host = config["pdu_settigs"]["host"]
+    server_port = config["pdu_settings"]["port"]
+    server_host = config["pdu_settings"]["host"]
 
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
