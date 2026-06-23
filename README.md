@@ -35,12 +35,12 @@ This project maps standard embedded test farm infrastructure patterns:
 pip install pyyaml
 ```
 - Netcat (nc) tool installed for network automation piplines.
-1. Launch the Network PDU Server
+#### 1. Launch the Network PDU Server
 Initialize he listener on the aster farm management machine;
 ```text
 python pdu_server.py
 ```
-2. Run the Automation Utility
+#### 2. Run the Automation Utility
 Open a separate terminal shell to interact with the running server infrastructure using the automation suite:
 - Query all monitored boards:
 ```text
@@ -54,3 +54,8 @@ Open a separate terminal shell to interact with the running server infrastructur
 ```text
 ./farm_tool.sh --cleanup
 ```
+## Professional Highlights Mapped to Embedded Roles
+This simulation platform explicitly demonstrates key concepts found in professional hardware regression test labs:
+1. Network Relay Emulation: Handles nework sockes to simulate remote terminal interfaces (Telnet/SSH equivalents).
+2. Configuration vs Code Separation: Modifying hardware states directly through configuration descriptors (YAML), mirroring production board farm architectures.
+3. Automated Error Handling: Safe handling of corrupt serialization matrices and invalid configuration parameters without crashing critical hardware pipelines.
