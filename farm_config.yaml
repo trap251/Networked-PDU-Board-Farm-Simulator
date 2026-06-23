@@ -4,14 +4,14 @@ pdu_settings:
 
 outlets:
   1:
-    board_names: "raspberry_pi_4"
+    board_name: "raspberry_pi_4"
     architecture: "ARM64"
     status: "ON"
   2:
-    board_names: "stm32_microcontroller"
+    board_name: "stm32_microcontroller"
     architecture: "Cortex-M4"
     status: "OFF"
   2:
-    board_names: "esp32_node"
+    board_name: "esp32_node"
     architecture: "Xtensa"
     status: "ON"

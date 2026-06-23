@@ -54,7 +54,7 @@ def handle_client(client_sock, outlet_data):
             outlet_key = int(outlet_id) if str(outlet_id).isdigit() else outlet_id
 
             if outlet_key in outlet_data:
-                board = outlet_data[outlet_key]["board name"]
+                board = outlet_data[outlet_key]["board_name"]
                 print(
                     f"EXECUTING HARD-REBOOT: Power cycling outlet {outlet_id} ({board})"
                 )
